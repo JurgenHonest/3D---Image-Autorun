@@ -178,21 +178,20 @@ body {
 The :after (or ::after) pseudo-selector inserts content after the content of an element, but it's still inside the element itself.
 You can use content: "" to add empty content or insert text using content: "some text".
 It’s often used for decorative purposes like adding icons, styling, or underlining effects.
-Example:
-css
-Copy code
+```
 h1::after {
-  content: "!";
+  content: "";
   color: red;
 }
-In your code, ::after is used to create a stroked outline of the text by duplicating the content with content: attr(data-content) and using -webkit-text-stroke to add an outline.
+```
+In the above code, ::after is used to create a stroked outline of the text by duplicating the content with content: attr(data-content) and using -webkit-text-stroke to add an outline.
 ### 2. -webkit:
--webkit is a CSS vendor prefix that targets WebKit-based browsers (such as Chrome and Safari) to ensure certain styles work properly.
-It’s often used for experimental or non-standard features in CSS, like gradients, transitions, or text effects.
-Example in your code: -webkit-text-stroke adds an outline to text.
-css
-Copy code
+a. The "-webkit" is a CSS vendor prefix that targets WebKit-based browsers (such as Chrome and Safari) to ensure certain styles work properly.<br>
+b. It’s often used for experimental or non-standard features in CSS, like gradients, transitions, or text effects.
+"-webkit-text-stroke" adds an outline to text.
+```
 -webkit-text-stroke: 2px #d2d2d2;
+```
 ### 3. @keyframes:
 @keyframes defines an animation sequence that specifies how elements should change styles at various stages (or "keyframes") of the animation.
 You define the start (from) and end (to) or intermediate steps (0%, 50%, etc.), then use the animation name in the element’s CSS to apply the animation.
@@ -222,3 +221,10 @@ background-image: repeating-linear-gradient(
       #25283b22 100px 101px
     );
 ```
+### 6. i. The attr() function:
+a. It is used to access an HTML attribute value and insert it into the CSS.<br>
+b. It is commonly applied within the content property of ::before or ::after pseudo-elements.<br>
+c. This is useful when you want to display the content of a custom attribute (e.g., data-* attributes) in your CSS without modifying the HTML directly.
+### 6. ii. data-content Attribute:
+a. data-* attributes are custom attributes that developers can add to any HTML element to store extra data that can be accessed via JavaScript or CSS.<br>
+b. In above case, data-content="Dark Portrayal" is added to an HTML element like <h1> to store the text "Dark Portrayal".
