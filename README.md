@@ -173,3 +173,55 @@ body {
 }
 
 ```
+## Very confusing or bewitching features of CSS:
+### 1. :after Pseudo-Selector:
+The :after (or ::after) pseudo-selector inserts content after the content of an element, but it's still inside the element itself.
+You can use content: "" to add empty content or insert text using content: "some text".
+It’s often used for decorative purposes like adding icons, styling, or underlining effects.
+Example:
+css
+Copy code
+h1::after {
+  content: "!";
+  color: red;
+}
+In your code, ::after is used to create a stroked outline of the text by duplicating the content with content: attr(data-content) and using -webkit-text-stroke to add an outline.
+### 2. -webkit:
+-webkit is a CSS vendor prefix that targets WebKit-based browsers (such as Chrome and Safari) to ensure certain styles work properly.
+It’s often used for experimental or non-standard features in CSS, like gradients, transitions, or text effects.
+Example in your code: -webkit-text-stroke adds an outline to text.
+css
+Copy code
+-webkit-text-stroke: 2px #d2d2d2;
+### 3. @keyframes:
+@keyframes defines an animation sequence that specifies how elements should change styles at various stages (or "keyframes") of the animation.
+You define the start (from) and end (to) or intermediate steps (0%, 50%, etc.), then use the animation name in the element’s CSS to apply the animation.
+Example:
+css
+Copy code
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+In your code, autorun creates a smooth 360-degree rotation of the slider.
+### 4. transform:
+transform applies transformations to elements such as moving, rotating, scaling, or skewing them.
+Transformations don’t affect the document flow and can work in 2D (e.g., rotate(45deg), translateX(100px)) or 3D (e.g., rotateY(360deg), perspective(1000px)).
+Example:
+css
+Copy code
+transform: rotateY(360deg) translateZ(100px);
+In your code, transform: perspective(1000px) rotateY(360deg) creates the 3D rotation effect for the slider.
+### 5. repeating-linear-gradient:
+repeating-linear-gradient creates a linear gradient pattern that repeats at a specified interval.
+You specify the direction (e.g., to right, to bottom), then define color stops that repeat.
+Example:
+css
+Copy code
+background: repeating-linear-gradient(to right, red 0 20px, blue 20px 40px);
+In your code, it creates a grid pattern by alternating between transparent and colored lines:
+css
+Copy code
+background-image: repeating-linear-gradient(
+  to right, transparent 0 100px, #25283b22 100px 101px
+);
