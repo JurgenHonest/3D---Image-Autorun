@@ -207,22 +207,17 @@ In your code, autorun creates a smooth 360-degree rotation of the slider.
 ### 4. transform:
 transform applies transformations to elements such as moving, rotating, scaling, or skewing them.
 Transformations don’t affect the document flow and can work in 2D (e.g., rotate(45deg), translateX(100px)) or 3D (e.g., rotateY(360deg), perspective(1000px)).
-Example:
-css
-Copy code
-transform: rotateY(360deg) translateZ(100px);
-In your code, transform: perspective(1000px) rotateY(360deg) creates the 3D rotation effect for the slider.
+```
+transform: perspective(1000px) rotateY(360deg)
+```
+This code creates the 3D rotation effect for the slider.
+
 ### 5. repeating-linear-gradient:
-repeating-linear-gradient creates a linear gradient pattern that repeats at a specified interval.
-You specify the direction (e.g., to right, to bottom), then define color stops that repeat.
+a. The "repeating-linear-gradient" creates a linear gradient pattern that repeats at a specified interval.<br>
+b. You specify the direction (e.g., to right, to bottom), then define color stops that repeat.
 ```
 background-image: repeating-linear-gradient(
       to right,
-      transparent 0 100px,
-      #25283b22 100px 101px
-    ),
-    repeating-linear-gradient(
-      to bottom,
       transparent 0 100px,
       #25283b22 100px 101px
     );
