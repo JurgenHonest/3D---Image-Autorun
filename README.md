@@ -215,13 +215,15 @@ In your code, transform: perspective(1000px) rotateY(360deg) creates the 3D rota
 ### 5. repeating-linear-gradient:
 repeating-linear-gradient creates a linear gradient pattern that repeats at a specified interval.
 You specify the direction (e.g., to right, to bottom), then define color stops that repeat.
-Example:
-css
-Copy code
-background: repeating-linear-gradient(to right, red 0 20px, blue 20px 40px);
-In your code, it creates a grid pattern by alternating between transparent and colored lines:
-css
-Copy code
+```
 background-image: repeating-linear-gradient(
-  to right, transparent 0 100px, #25283b22 100px 101px
-);
+      to right,
+      transparent 0 100px,
+      #25283b22 100px 101px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      transparent 0 100px,
+      #25283b22 100px 101px
+    );
+```
