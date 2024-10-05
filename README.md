@@ -227,4 +227,12 @@ b. It is commonly applied within the content property of ::before or ::after pse
 c. This is useful when you want to display the content of a custom attribute (e.g., data-* attributes) in your CSS without modifying the HTML directly.
 ### 6. ii. data-content Attribute:
 a. data-* attributes are custom attributes that developers can add to any HTML element to store extra data that can be accessed via JavaScript or CSS.<br>
-b. In above case, data-content="Dark Portrayal" is added to an HTML element like <h1> to store the text "Dark Portrayal".
+b. In above case, data-content="Dark Portrayal" is added to an HTML element like h1 to store the text "Dark Portrayal".
+```
+.main .container h1::after {
+  content: attr(data-content);
+  z-index: 3;
+  -webkit-text-stroke: 2px #d2d2d2;
+  color: transparent;
+}
+```
