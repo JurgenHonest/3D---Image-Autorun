@@ -193,19 +193,18 @@ b. It’s often used for experimental or non-standard features in CSS, like grad
 -webkit-text-stroke: 2px #d2d2d2;
 ```
 ### 3. @keyframes:
-@keyframes defines an animation sequence that specifies how elements should change styles at various stages (or "keyframes") of the animation.
-You define the start (from) and end (to) or intermediate steps (0%, 50%, etc.), then use the animation name in the element’s CSS to apply the animation.
-Example:
-css
-Copy code
+a. "@keyframes" defines an animation sequence that specifies how elements should change styles at various stages (or "keyframes") of the animation.<br>
+b. You define the start (from) and end (to) or intermediate steps (0%, 50%, etc.), then use the animation name in the element’s CSS to apply the animation.
+```
 @keyframes rotate {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
-In your code, autorun creates a smooth 360-degree rotation of the slider.
+```
+In above code, autorun creates a smooth 360-degree rotation of the slider.
 ### 4. transform:
-transform applies transformations to elements such as moving, rotating, scaling, or skewing them.
-Transformations don’t affect the document flow and can work in 2D (e.g., rotate(45deg), translateX(100px)) or 3D (e.g., rotateY(360deg), perspective(1000px)).
+a. The "transform" applies transformations to elements such as moving, rotating, scaling, or skewing them.<br>
+b. Transformations don’t affect the document flow and can work in 2D (e.g., rotate(45deg), translateX(100px)) or 3D (e.g., rotateY(360deg), perspective(1000px)).
 ```
 transform: perspective(1000px) rotateY(360deg)
 ```
