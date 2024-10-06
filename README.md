@@ -175,9 +175,9 @@ body {
 ```
 ## Very confusing or bewitching features of CSS:
 ### 1. :after Pseudo-Selector:
-The :after (or ::after) pseudo-selector inserts content after the content of an element, but it's still inside the element itself.
-You can use content: "" to add empty content or insert text using content: "some text".
-It’s often used for decorative purposes like adding icons, styling, or underlining effects.
+a.&nbsp; The :after (or ::after) pseudo-selector inserts content after the content of an element, but it's still inside the element itself.<br>
+b.&nbsp; You can use content: "" to add empty content or insert text using content: "some text".
+c.&nbsp; It’s often used for decorative purposes like adding icons, styling, or underlining effects.
 ```
 h1::after {
   content: "";
