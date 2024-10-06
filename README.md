@@ -1,7 +1,7 @@
 # 3D - Image AutoRun
   --https://sumit-3dimagesautorun.netlify.app/
-
-  ## A very basic HTML code using:
+The image Autorun project is bring together only with the help of HTML and CSS without javascript at all.
+  ## A very basic HTML code is used:
   ```
 <!DOCTYPE html>
 <html lang="en">
@@ -57,7 +57,7 @@
   </body>
 </html>
 ```
-## The CSS is the main work; without the help of js at all:
+## The CSS is the main work:
 ```
 
 @import url("https://fonts.cdnfonts.com/css/ica-rubrik-black");
