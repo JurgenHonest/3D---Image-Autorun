@@ -184,17 +184,17 @@ h1::after {
   color: red;
 }
 ```
-In the above code, ::after is used to create a stroked outline of the text by duplicating the content with content: attr(data-content) and using -webkit-text-stroke to add an outline.
+In the above code,&nbsp; ::after is used to create a stroked outline of the text by duplicating the content with content: attr(data-content) and using -webkit-text-stroke to add an outline.
 ### 2. -webkit:
-a. The "-webkit" is a CSS vendor prefix that targets WebKit-based browsers (such as Chrome and Safari) to ensure certain styles work properly.<br>
-b. It’s often used for experimental or non-standard features in CSS, like gradients, transitions, or text effects.
+a.&nbsp; The "-webkit" is a CSS vendor prefix that targets WebKit-based browsers (such as Chrome and Safari) to ensure certain styles work properly.<br>
+b.&nbsp; It’s often used for experimental or non-standard features in CSS, like gradients, transitions, or text effects.
 "-webkit-text-stroke" adds an outline to text.
 ```
    -webkit-text-stroke: 2px #d2d2d2;
 ```
 ### 3. @keyframes:
-a. "@keyframes" defines an animation sequence that specifies how elements should change styles at various stages (or "keyframes") of the animation.<br>
-b. You define the start (from) and end (to) or intermediate steps (0%, 50%, etc.), then use the animation name in the element’s CSS to apply the animation.
+a.&nbsp; "@keyframes" defines an animation sequence that specifies how elements should change styles at various stages (or "keyframes") of the animation.<br>
+b.&nbsp; You define the start (from) and end (to) or intermediate steps (0%, 50%, etc.), then use the animation name in the element’s CSS to apply the animation.
 ```
 @keyframes rotate {
   from { transform: rotate(0deg); }
@@ -203,16 +203,16 @@ b. You define the start (from) and end (to) or intermediate steps (0%, 50%, etc.
 ```
 In above code, autorun creates a smooth 360-degree rotation of the slider.
 ### 4. transform:
-a. The "transform" applies transformations to elements such as moving, rotating, scaling, or skewing them.<br>
-b. Transformations don’t affect the document flow and can work in 2D (e.g., rotate(45deg), translateX(100px)) or 3D (e.g., rotateY(360deg), perspective(1000px)).
+a.&nbsp; The "transform" applies transformations to elements such as moving, rotating, scaling, or skewing them.<br>
+b.&nbsp; Transformations don’t affect the document flow and can work in 2D (e.g., rotate(45deg), translateX(100px)) or 3D (e.g., rotateY(360deg), perspective(1000px)).
 ```
    transform: perspective(1000px) rotateY(360deg)
 ```
 This code creates the 3D rotation effect for the slider.
 
 ### 5. repeating-linear-gradient:
-a. The "repeating-linear-gradient" creates a linear gradient pattern that repeats at a specified interval.<br>
-b. You specify the direction (e.g., to right, to bottom), then define color stops that repeat.
+a.&nbsp; The "repeating-linear-gradient" creates a linear gradient pattern that repeats at a specified interval.<br>
+b.&nbsp; You specify the direction (e.g., to right, to bottom), then define color stops that repeat.
 ```
     background-image: repeating-linear-gradient(
       to right,
@@ -221,15 +221,15 @@ b. You specify the direction (e.g., to right, to bottom), then define color stop
     );
 ```
 ### 6. i. The attr() function:
-a. It is used to access an HTML attribute value and insert it into the CSS.<br>
-b. It is commonly applied within the content property of ::before or ::after pseudo-elements.<br>
-c. This is useful when you want to display the content of a custom attribute (e.g., data-* attributes) in your CSS without modifying the HTML directly.
+a.&nbsp; It is used to access an HTML attribute value and insert it into the CSS.<br>
+b.&nbsp; It is commonly applied within the content property of ::before or ::after pseudo-elements.<br>
+c.&nbsp; This is useful when you want to display the content of a custom attribute (e.g., data-* attributes) in your CSS without modifying the HTML directly.
 ```
   content: attr(data-content);
 ```
 ### 6. ii. data-content Attribute:
-a. data-* attributes are custom attributes that developers can add to any HTML element to store extra data that can be accessed via JavaScript or CSS.<br>
-b. In above case, data-content="Dark Portrayal" is added to an HTML element like h1 to store the text "Dark Portrayal".
+a.&nbsp; "data-" attributes are custom attributes that developers can add to any HTML element to store extra data that can be accessed via JavaScript or CSS.<br>
+b.&nbsp; In above case, data-content="Dark Portrayal" is added to an HTML element like h1 to store the text "Dark Portrayal".
 ```
 .main .container h1::after {
   content: attr(data-content);
